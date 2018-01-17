@@ -23,7 +23,7 @@ requirements:
     - numpy x.x
     - scikit-learn >=0.18.0
     - scipy >=0.14.1
-    - gcc  # [(linux or osx) and not win]
+    - gcc
 
   run:
     - numpy x.x
@@ -46,3 +46,4 @@ about:
 extra:
   recipe-maintainers:
     - jseabold
+    - beckermr
