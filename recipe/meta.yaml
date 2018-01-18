@@ -20,13 +20,13 @@ requirements:
     - pip
     - python
     - setuptools
-    - numpy x.x
+    - numpy 1.11.*
     - scikit-learn >=0.18.0
     - scipy >=0.14.1
     - gcc
 
   run:
-    - numpy x.x
+    - numpy >=1.11
     - scikit-learn >=0.18.0
     - scipy >=0.14.1
     - libgcc  # [linux]
