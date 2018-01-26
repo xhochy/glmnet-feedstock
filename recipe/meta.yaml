@@ -12,7 +12,7 @@ source:
   md5: {{ md5 }}
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
 
 requirements:
@@ -20,13 +20,13 @@ requirements:
     - pip
     - python
     - setuptools
-    - numpy x.x
+    - numpy 1.11.*
     - scikit-learn >=0.18.0
     - scipy >=0.14.1
-    - gcc  # [(linux or osx) and not win]
+    - gcc
 
   run:
-    - numpy x.x
+    - numpy >=1.11
     - scikit-learn >=0.18.0
     - scipy >=0.14.1
     - libgcc  # [linux]
@@ -46,3 +46,4 @@ about:
 extra:
   recipe-maintainers:
     - jseabold
+    - beckermr
