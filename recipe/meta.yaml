@@ -10,26 +10,28 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   md5: {{ md5 }}
+  patches:
+    - setup.py.patch
 
 build:
-  number: 2
+  number: 1002
   skip: True  # [win]
 
 requirements:
   build:
+    - {{ compiler('c') }}
+    - {{ compiler('fortran') }}
+  host:
     - python
     - numpy 1.11.*
     - scikit-learn >=0.18.0
     - scipy >=0.14.1
-    - gcc
-
+    - pip
   run:
     - python
-    - numpy >=1.11
+    - {{ pin_compatible('numpy') }}
     - scikit-learn >=0.18.0
     - scipy >=0.14.1
-    - libgcc  # [linux]
-    - libgfortran  # [osx]
 
 test:
   imports:
@@ -38,6 +40,7 @@ test:
 about:
   home: https://github.com/civisanalytics/python-glmnet
   license: GPL-2.0
+  license_family: GPL
   summary: 'Python wrapper for glmnet'
   dev_url: https://github.com/civisanalytics/python-glmnet
   license_file: LICENSE
