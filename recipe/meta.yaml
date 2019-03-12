@@ -1,6 +1,6 @@
 {% set name = "glmnet" %}
-{% set version = "2.0.0" %}
-{% set md5 = "e0465e76af8c22440d086f34d9ad8d5c" %}
+{% set version = "2.1.1" %}
+{% set md5 = "6d44a281acafdd37330df9debb22ddb7" %}
 
 package:
   name: {{ name }}
@@ -14,7 +14,7 @@ source:
     - setup.py.patch
 
 build:
-  number: 1002
+  number: 0
   skip: True  # [win]
 
 requirements:
@@ -49,3 +49,4 @@ extra:
   recipe-maintainers:
     - jseabold
     - beckermr
+    - stephen-hoover
