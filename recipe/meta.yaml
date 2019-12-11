@@ -47,6 +47,10 @@ about:
 
 extra:
   recipe-maintainers:
+    - mheilman
+    - salilgupta1
+    - colemandsmith
+    - jacksonllee
     - jseabold
     - beckermr
     - stephen-hoover

@@ -197,6 +197,10 @@ Feedstock Maintainers
 =====================
 
 * [@beckermr](https://github.com/beckermr/)
+* [@colemandsmith](https://github.com/colemandsmith/)
+* [@jacksonllee](https://github.com/jacksonllee/)
 * [@jseabold](https://github.com/jseabold/)
+* [@mheilman](https://github.com/mheilman/)
+* [@salilgupta1](https://github.com/salilgupta1/)
 * [@stephen-hoover](https://github.com/stephen-hoover/)
 
