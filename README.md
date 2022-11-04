@@ -217,5 +217,4 @@ Feedstock Maintainers
 * [@jseabold](https://github.com/jseabold/)
 * [@mheilman](https://github.com/mheilman/)
 * [@salilgupta1](https://github.com/salilgupta1/)
-* [@stephen-hoover](https://github.com/stephen-hoover/)
 
